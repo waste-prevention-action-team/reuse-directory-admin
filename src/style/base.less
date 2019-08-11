@@ -1,0 +1,36 @@
+@import './semantic/semantic.less';
+
+@header-height: 55px;
+
+.no-border {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+html,
+body,
+#App {
+    height: 100%;
+    width: 100%
+}
+
+#Header {
+    height: @header-height;
+    border: none;
+    border-radius: 0;
+    background: rgb(73, 156, 26);
+    background: linear-gradient(90deg, rgba(73, 156, 26, 1) 0%, rgba(1, 111, 49, 1) 100%);
+    margin: 0;
+
+    &>* {
+        color: #fff !important;
+    }
+}

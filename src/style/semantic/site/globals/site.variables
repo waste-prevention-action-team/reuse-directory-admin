@@ -1,0 +1,3 @@
+@green: #369b46;
+
+@primaryColor: @green;

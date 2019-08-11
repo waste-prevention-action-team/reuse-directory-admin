@@ -1,0 +1,7 @@
+build/
+data/
+env/
+resources/
+
+config.js*
+npm-debug.log

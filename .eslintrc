@@ -1,0 +1,133 @@
+{
+    "extends": "airbnb",
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "moduleDirectory": [
+                    "./src",
+                    "./node_modules"
+                ]
+            }
+        }
+    },
+    "plugins": [
+        "react"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        },
+        "sourceType": "module"
+    },
+    "rules": {
+        "brace-style": [
+            "error",
+            "1tbs",
+            {
+                "allowSingleLine": true
+            }
+        ],
+        "camelcase": "off",
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "default-case": "off",
+        "function-paren-newline": [
+            "error",
+            "consistent"
+        ],
+        "import/no-extraneous-dependencies": 0,
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "max-len": [
+            "warn",
+            {
+                "code": 120,
+                "tabWidth": 4,
+                "ignoreComments": true,
+                "ignoreTrailingComments": true,
+                "ignoreUrls": true,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true,
+                "ignoreRegExpLiterals": true
+            }
+        ],
+        "no-console": [
+            "error",
+            {
+                "allow": ["error"]
+            }
+        ],
+        "no-mixed-operators": [
+            "error",
+            {
+                "allowSamePrecedence": true
+            }
+        ],
+        "no-multi-spaces": [
+            "error",
+            {
+                "ignoreEOLComments": true
+            }
+        ],
+        "no-param-reassign": [
+            "error",
+            {
+                "props": false
+            }
+        ],
+        "no-underscore-dangle": "off",
+        "no-unused-expressions": [
+            "error",
+            {
+                "allowShortCircuit": true
+            }
+        ],
+        "operator-linebreak": [
+            "warn",
+            "after"
+        ],
+        "prefer-destructuring": "off",
+        "semi": [
+            "error",
+            "never"
+        ],
+        "react/destructuring-assignment": "off",
+        "react/jsx-curly-newline": [
+            "warn",
+            {
+                "multiline": "consistent",
+                "singleline": "consistent"
+            }
+        ],
+        "react/jsx-indent": "off",
+        "react/jsx-indent-props": [
+            "error",
+            4
+        ],
+        "react/jsx-one-expression-per-line": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/jsx-wrap-multilines": "off",
+        "react/jsx-uses-vars": 2,
+        "react/jsx-uses-react": 2,
+        "react/static-property-placement": ["warn", "static public field"],
+        "jsx-a11y/anchor-is-valid": "off",
+        "jsx-a11y/click-events-have-key-events": "off",
+        "jsx-a11y/label-has-associated-control": "off",
+        "jsx-a11y/label-has-for": "off",
+        "jsx-a11y/mouse-events-have-key-events": "off",
+        "jsx-a11y/no-static-element-interactions": "off"
+    }
+}
